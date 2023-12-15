@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+    <style>
+        .custom-gradient-background1 {
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(48,48,122,0.7736344537815126) 35%, rgba(0,212,255,1) 100%);
+      }
+      .custom-gradient-background2 {
+        background: rgb(238,174,202);
+        background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+      }
+    </style>
+    
+    <nav class="navbar is-hidden-mobile" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="">
+            <img src="https://www.upskill.nl/img/logo.svg">
+          </a>
+  
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+  
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              Home
+            </a>
+  
+            <a class="navbar-item">
+              dagelijkse taken
+            </a>
+            <a class="navbar-item" href="taken.html">
+                reviews
+              </a>
+
+              </div>
+            </div>
+          </div>
+  
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+    <div class="custom-gradient-background1 has-text-black-bis has-text-centered">
+    <div class="header">
+        <h2>To Do List</h2>
+        <p>maandag</p>
+        <input type="text" id="myInput" placeholder="nieuw doel">
+        <button class="button is-black">voeg toe</button>
+    </div>
+    </div>
+    <div class="has-background-black-bis has-text-white">
+    <ul>
+        <li <label class="checkbox">
+            <input type="checkbox">
+          </label>09:00: start van de dag & mentor gesprek</li><br><br>
+        <li <label class="checkbox">
+            <input type="checkbox">
+          </label>10:00: coderen</li><br><br>
+          <progress class="progress is-success" value="60" max="80">60%</progress>
+        <li <label class="checkbox">
+            <input type="checkbox">
+          </label>11:00: live review met coach</li><br><br>
+          <progress class="progress is-danger" value="90" max="100">100%</progress>
+        <li <label class="checkbox">
+            <input type="checkbox">
+          </label>12:00: eindopdracht inleveren</li> <br><br>
+          <progress class="progress is-success" value="90" max="80">100%</progress>
+        <li <label class="checkbox">
+            <input type="checkbox">
+          </label>13:00: coding sessie volgen</li> <br><br>
+          <progress class="progress is-success" value="80" max="90">90%</progress>
+        <li <label class="checkbox">
+            <input type="checkbox">
+          </label>14:00: project afmaken</li> <br><br>
+          <progress class="progress is-success" value="60" max="80">60%</progress>
+        <li <label class="checkbox">
+            <input type="checkbox">
+          </label>15:00: dag afsluiten</li> <br><br>
+      </ul>
+    </div>
+
+    <nav class="navbar is-link is-fixed-bottom is-hidden-tablet custom-gradient-background1" role="navigation">
+      <div class="navbar-brand">
+          <a class="navbar-item is-expanded is-block has-text-centered">
+              <i class="fa fa-user"></i>
+              <p class="is-size-7">Account</p>
+          </a>
+          <a class="navbar-item is-expanded is-block has-text-centered">
+              <i class="fa fa-list"></i>
+              <p class="is-size-7">taken</p>
+          </a>
+          <a class="navbar-item is-expanded is-block has-text-centered" href="taken.html">
+              <i class="fa fa-flag"></i>
+              <p class="is-size-7">reviews</p>
+          </a>
+          <a class="navbar-item is-expanded is-block has-text-centered">
+              <i class="fa fa-cog"></i>
+              <p class="is-size-7">Settings</p>
+          </a>
+      </div>
+  </nav>
+    <footer class="footer custom-gradient-background2 has-text-black-bis">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by >Akshay Dhondai. The source code is licensed
+            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+          </p>
+        </div>
+      </footer>
+</body>
+</html>
